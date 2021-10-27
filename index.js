@@ -27,11 +27,33 @@ function oddAndEvenInFifteen(){
 }
 
 function sortThreeNums(num1,num2,num3){
- 
-}
+ if(num1 >= num2 && num1 >= num3) {
+   let max = num1;
+   if (num2 >= num3) {
+     console.log(max, num2, num3);
+   } else {
+     console.log(max, num3, num2);
+   }
+ } else if(num2 >= num1 && num2 >= num3) {
+   let max = num2;
+   if (num1 >= num3) {
+     console.log(max, num1, num3);
+   } else {
+     console.log(max, num3, num1);
+   }
+ } else {
+   let max = num3;
+   if (num1 >= num2) {
+     console.log(max, num1, num2);
+   } else {
+     console.log(max, num2, num1);
+   }
+ }
+} 
 
 console.log(sumOfThreeAndFive());
 console.log(greaterNum(5,2));
 oddAndEvenInFifteen();
+sortThreeNums(-13,-13,-1);
 
 
